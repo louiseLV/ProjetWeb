@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f2f2f2;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(34, 154, 191);
+    align-items: center;
+    /* align-content: space-evenly; */
+}
+
+#icon {
+    border-radius: 150px;
+}
+
+
+#navbar li {
+    flex-grow: 1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 17px;
+}
+
+#navbar li:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
