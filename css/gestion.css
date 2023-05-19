@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    height: 800vh;
+
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(34, 154, 191);
+    align-items: center;
+    /* align-content: space-evenly; */
+    height: 111px;
+    position: fixed;
+    width: 100%;
+}
+
+#icon {
+    border-radius: 150px;
+    margin-left: 1%;
+}
+
+
+#navbar li {
+    flex-grow: 1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 17px;
+}
+
+#navbar li:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#top {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    padding: 10px;
+    font-size: larger;
+    padding-top: 120px;
+    text-align: center;
+}
+
+
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+}
+
+#submit:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #FFD401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+#submit:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+#submit span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+#submit:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+fieldset {
+    border: 1px solid #183153;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+}
+
+fieldset button {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 25%;
+}

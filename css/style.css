@@ -10,6 +10,8 @@ body {
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     background-color: #f2f2f2;
+    text-align: center;
+    height: 800vh;
 
 }
 
@@ -22,10 +24,13 @@ body {
     align-items: center;
     /* align-content: space-evenly; */
     height: 111px;
+    position: fixed;
+    width: 100%;
 }
 
 #icon {
     border-radius: 150px;
+    margin-left: 1%;
 }
 
 
@@ -55,4 +60,26 @@ a {
     background-color: rgb(217, 217, 217);
     padding: 10px;
     font-size: larger;
+    padding-top: 120px;
+}
+
+#mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: larger;
+}
+
+.divinmid {
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/gestion.css">
+    <link rel="icon" href="../assets/Budget.png">
+</head>
+
+<body>
+    <ul id="navbar">
+        <img src="../assets/Budget.png" alt="" width="100" height="100" id="icon">
+        <li class="elefromnav"><a href="home.html">Home</a></li>
+        <li class="elefromnav"><a href="gestion.html">Calculator</a></li>
+        <li class="elefromnav"><a href="sub.html">Subscribe</a></li>
+        <li class="elefromnav"><a href="about.html">About</a></li>
+    </ul>
+</body>
+<div id="top">
+    <h1>Viens gérer ton budget !</h1>
+</div>
+<form action="">
+    <fieldset>
+        <legend>Dépenses</legend>
+        <label for="name">Nom de la dépense</label>
+        <input type="text" id="name" name="name" placeholder="Name of the expense">
+    </fieldset>
+    <fieldset>
+        <label for="price">Prix</label>
+        <input type="number" id="price" name="price" placeholder="Price of the expense">
+    </fieldset>
+    <fieldset>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" placeholder="Date of the expense">
+    </fieldset>
+    <fieldset>
+        <label for="category">Catégorie</label>
+        <select name="category" id="category">
+            <option value="food">Nourriture</option>
+            <option value="transport">Transport</option>
+            <option value="house">Maison</option>
+            <option value="other">Autre</option>
+        </select>
+        <button id="submit">
+            <span>Ajouter</span>
+        </button>
+    </fieldset>
+</form>
+
+</html>
