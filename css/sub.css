@@ -34,7 +34,9 @@ body {
     margin-right: 10px;
 }
 
-
+#navbar li a:hover {
+    color: #0505058e;
+}
 a {
     text-decoration: none;
     color: #ffffff;

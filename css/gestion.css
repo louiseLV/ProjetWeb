@@ -171,10 +171,60 @@ fieldset button {
 }
 
 
-.dropdown-select:focus {
+.conteneur:focus {
     border-color: #66afe9;
 }
 
-.dropdown-select option {
+.conteneur option {
     padding: 10px;
+}
+
+#tab {
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    border: transparent;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+#tab td {
+    padding: 8px;
+    color: #333;
+
+}
+
+#tab caption {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+#tab tr:hover {
+    background-color: #f5f5f5;
+}
+
+#tab td:first-child {
+    font-weight: bold;
+}
+
+#tab thead {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#tab tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#graphcontainer {
+    width: 50%;
+    margin-left: 25%;
 }

@@ -8,6 +8,8 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="../css/gestion.css">
     <link rel="icon" href="../assets/Budget.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/gestion.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
 <div id="top">
     <h1>Viens gérer ton budget !</h1>
 </div>
-<form action="">
+<form action="" id="form">
     <fieldset>
         <label for="name">Nom de la dépense</label>
         <input type="text" id="name" name="name" placeholder="Name of the expense" class="conteneur">
@@ -39,16 +41,31 @@
         <label for="category">Catégorie</label>
         <div class="dropdown">
             <select name="category" class="conteneur">
-                <option value=" option1">Nourriture</option>
-                <option value="option2">Transport</option>
-                <option value="option3">Maison</option>
-                <option value="option4">Autre</option>
+                <option value="Nourriture">Nourriture</option>
+                <option value="Transport">Transport</option>
+                <option value="Maison">Logement</option>
+                <option value="Vêtements">Vêtements</option>
+                <option value="Loisirs">Loisirs</option>
+                <option value="Autre">Autre</option>
             </select>
         </div>
         <button id="submit">
-            <span>Ajouter</span>
+            <span id="send">Ajouter</span>
         </button>
     </fieldset>
 </form>
+<table id="tab">
+    <caption>Gestion des dépenses</caption>
+    <tr>
+        <th>Nom</th>
+        <th>Prix</th>
+        <th>Date</th>
+        <th>Catégorie</th>
+    </tr>
+</table>
+
+<div id="graphcontainer">
+    <canvas id="graph"></canvas>
+</div>
 
 </html>
