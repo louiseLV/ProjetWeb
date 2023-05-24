@@ -17,6 +17,17 @@ body {
 
 }
 
+#cache {
+    background-color: blueviolet;
+}
+
+#cache p {
+    opacity: 0;
+}
+
+
+
+
 #navbar {
     list-style-type: none;
     margin: 0;

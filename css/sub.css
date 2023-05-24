@@ -37,6 +37,7 @@ body {
 #navbar li a:hover {
     color: #0505058e;
 }
+
 a {
     text-decoration: none;
     color: #ffffff;
@@ -160,4 +161,30 @@ a {
 .plan .button:hover,
 .plan .button:focus {
     background-color: #4133B7;
+}
+
+#plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-size: cover;
+    width: 100%;
+}
+
+#top h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: #425675;
+    padding-top: 5%;
 }
