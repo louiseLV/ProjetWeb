@@ -3,7 +3,7 @@ const graph = document.getElementById("graph");
 let chart = new Chart(graph, {
     type: 'doughnut',
     data: {
-        labels: ['Nourriture', 'Vêtements', 'Loisirs', 'Transport', 'Logement', 'Autres'],
+        labels: ['Nourriture', 'Transport', 'Logement', 'Vêtements', 'Loisirs', 'Autres'],
         datasets: [{
             label: '% de dépenses par catégorie',
             data: [0, 0, 0, 0, 0, 0],
@@ -19,6 +19,7 @@ let chart = new Chart(graph, {
     }
 });
 
+const graph2 = document.getElementById("graph2");
 
 
 
