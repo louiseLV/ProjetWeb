@@ -81,7 +81,7 @@ button {
     content: " ";
     width: 0%;
     height: 100%;
-    background: #FFD401;
+    background: rgb(34, 154, 191);
     position: absolute;
     transition: all 0.4s ease-in-out;
     right: 0;
