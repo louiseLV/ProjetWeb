@@ -19,7 +19,6 @@ let chart = new Chart(graph, {
     }
 });
 
-const graph2 = document.getElementById("graph2");
 
 
 
@@ -29,9 +28,14 @@ const graph2 = document.getElementById("graph2");
 let submit = document.getElementById("send");
 
 console.log(document.getElementById("send"))
-let form = document.getElementById("form");
-submit.addEventListener("click", function (event) {
+
+
+
+
+function send(event) {
     event.preventDefault();
+    let form = document.getElementById("form");
+
     let name = form.elements["name"].value;
     let date = form.elements["date"].value;
     let price = form.elements["price"].value;
@@ -53,8 +57,7 @@ submit.addEventListener("click", function (event) {
     tab.appendChild(newLine);
     console.log(getDepensesFromCategorie());
     modifyChart(chart, getDepensesFromCategorie());
-});
-
+}
 
 
 
