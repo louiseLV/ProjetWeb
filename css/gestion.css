@@ -91,6 +91,10 @@ button {
     width: 100%;
 }
 
+#submit {
+    cursor: pointer;
+}
+
 #submit span {
     text-align: center;
     text-decoration: none;
@@ -101,6 +105,7 @@ button {
     font-weight: 700;
     letter-spacing: 0.3em;
     transition: all 0.3s ease-in-out;
+
 }
 
 #submit:hover span {
