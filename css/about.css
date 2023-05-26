@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Merriweather',
+        serif;
     background-color: #f2f2f2;
     text-align: center;
 
@@ -60,7 +61,7 @@ a {
 
     justify-content: space-evenly;
     align-items: center;
-    font-size: larger;
+    font-size: x-large;
     padding-top: 120px;
 }
 
@@ -69,6 +70,14 @@ a {
     margin: 10%;
     justify-content: space-evenly;
 }
+
+#mid {
+    font-size: x-large;
+    margin-block: 5%;
+    line-height: 200%;
+}
+
+
 
 .notSee {
     opacity: 0;
