@@ -15,8 +15,8 @@ proPlan.addEventListener("click", function () {
         bigDiv = document.createElement("div");
         bigDiv.classList.add("bigDiv");
         document.body.appendChild(bigDiv);
-        titre = document.createElement("h1");
-        titre.textContent = "Rentrez vos informations de paiement";
+        titre = document.createElement("h2");
+        titre.textContent = "Vous avez sélectionné l'option payante. Veuillez renseigner vos données personnelles: ";
         bigDiv.appendChild(titre);
 
         form = document.createElement("form");
